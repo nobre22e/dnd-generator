@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="CharacterBuilder.Views.CharacterRace"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterBuilder.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">Character Race</TextBlock>
+        <ComboBox x:Name="RacePick" Grid.Row="1" SelectionChanged="RacePick_SelectionChanged" Header="Pick a Character Race" PlaceholderText="Race" Width="Auto">
+            <x:String>Aasimar</x:String>
+            <x:String>Bugbear</x:String>
+            <x:String>Dragonborn</x:String>
+            <x:String>Dwarf</x:String>
+            <x:String>Elf</x:String>
+            <x:String>Firbolg</x:String>
+            <x:String>Gnome</x:String>
+            <x:String>Goblin</x:String>
+            <x:String>Goliath</x:String>
+            <x:String>Hobgoblin</x:String>
+            <x:String>Half-Elf</x:String>
+            <x:String>Halfling</x:String>
+            <x:String>Half-Orc</x:String>
+            <x:String>Human</x:String>
+            <x:String>Kenku</x:String>
+            <x:String>Kobold</x:String>
+            <x:String>Lizardfolk</x:String>
+            <x:String>Orc</x:String>
+            <x:String>Tabaxi</x:String>
+            <x:String>Tiefling</x:String>
+            <x:String>Triton</x:String>
+            <x:String>Yuan-Ti Pureblood</x:String>
+        </ComboBox>
+    </Grid>
+</Page>

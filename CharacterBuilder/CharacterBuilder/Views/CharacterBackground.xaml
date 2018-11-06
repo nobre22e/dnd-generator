@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="CharacterBuilder.Views.CharacterBackground"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterBuilder.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">Character Background</TextBlock>
+        <ComboBox x:Name="PickAlignment" Grid.Row="1" Grid.Column="0" SelectionChanged="PickAlignment_SelectionChanged" Header="Pick an Alignment" PlaceholderText="Alignment" Width="Auto">
+            <x:String>Lawful Good</x:String>
+            <x:String>Neutral Good</x:String>
+            <x:String>Chaotic Good</x:String>
+            <x:String>Lawful Neutral</x:String>
+            <x:String>True Neutral</x:String>
+            <x:String>Chaotic Neutral</x:String>
+            <x:String>Lawful Evil</x:String>
+            <x:String>Neutral Evil</x:String>
+            <x:String>Chaotic Evil</x:String>
+        </ComboBox>
+        <ComboBox x:Name="PickBackground" Grid.Row="1" Grid.Column="1" SelectionChanged="PickBackground_SelectionChanged" Header="Pick a Background" PlaceholderText="Background" Width="Auto">
+            <x:String>Acolyte</x:String>
+            <x:String>Charlatan</x:String>
+            <x:String>Criminal</x:String>
+            <x:String>Entertainer</x:String>
+            <x:String>Folk Hero</x:String>
+            <x:String>Gladiator</x:String>
+            <x:String>Guild Artisan</x:String>
+            <x:String>Guild Merchant</x:String>
+            <x:String>Hermit</x:String>
+            <x:String>Knight</x:String>
+            <x:String>Noble</x:String>
+            <x:String>Outlander</x:String>
+            <x:String>Pirate</x:String>
+            <x:String>Sage</x:String>
+            <x:String>Sailor</x:String>
+            <x:String>Soldier</x:String>
+            <x:String>Spy</x:String>
+            <x:String>Urchin</x:String>
+        </ComboBox>
+    </Grid>
+</Page>

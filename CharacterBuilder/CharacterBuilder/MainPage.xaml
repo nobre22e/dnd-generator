@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="CharacterBuilder.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterBuilder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name="NavView"
+                Loaded="NavView_Loaded"
+                SelectionChanged="NavView_SelectionChanged"
+                ItemInvoked="NavView_ItemInvoked"
+                IsTabStop="False"
+                Header="Build Your Character">
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="home" Tag="home">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE10F;"/>
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_home">Welcome</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="race" Tag="race">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE12B;" />
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_race">Race</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="chclass" Tag="chclass">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE1D1;" />
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_chclass">Class</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="background" Tag="background">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE136;" />
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_background">Background</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="ability" Tag="ability">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE1E2;" />
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_ability">Abilities</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem x:Name="equipment" Tag="equipment">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE133;"/>
+                    </NavigationViewItem.Icon>
+                    <TextBlock Tag="nav_equipment">Equipment</TextBlock>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame" Margin="25,0,25,10"></Frame>
+        </NavigationView>
+    </Grid>
+</Page>

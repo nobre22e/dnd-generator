@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="CharacterBuilder.Views.CharacterClass"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterBuilder.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">Character Class</TextBlock>
+        <ComboBox x:Name="ClassPick" Grid.Row="1" SelectionChanged="ClassComboBox_SelectionChanged" Header="Pick a Character Class" PlaceholderText="Class" Width="Auto">
+            <x:String>Barbarian</x:String>
+            <x:String>Bard</x:String>
+            <x:String>Cleric</x:String>
+            <x:String>Druid</x:String>
+            <x:String>Fighter</x:String>
+            <x:String>Monk</x:String>
+            <x:String>Paladin</x:String>
+            <x:String>Ranger</x:String>
+            <x:String>Ranger (revised)</x:String>
+            <x:String>Rogue</x:String>
+            <x:String>Sorcerer</x:String>
+            <x:String>Warlock</x:String>
+            <x:String>Wizard</x:String>
+        </ComboBox>
+    </Grid>
+</Page>

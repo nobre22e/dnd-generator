@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="CharacterBuilder.Views.WelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CharacterBuilder.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,0,0,0">Welcome to Character Builder, a character builder for 5e Dungeons and Dragons Characters.
+            </TextBlock>
+            <Grid Width="280" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="CharacterName" Height="60" Grid.Column="0" Header="Enter your Character's name:" PlaceholderText="Name" TextChanged="TextBox_TextChanged" Width="201" HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Top" />
+                <Button x:Name="Enter" Click="EnterButton_Click" Grid.Column="1" VerticalAlignment="Bottom" Margin="4,0,0,0">Enter</Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
